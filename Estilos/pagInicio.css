@@ -1,0 +1,337 @@
+/* --------------- Importación de estilos de letra (Font family) --------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Lines&family=Source+Code+Pro:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+/*  
+para usar la primera importación:
+    font-family: 'Roboto', sans-serif;
+
+para usar la segunda importación:
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+
+para usar la tercera importación:
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+*/
+
+/*----------------------- Estilos generales de la pagina -----------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--------------- Modificación de la barra de scroll ---------------*/
+body {
+    --scrollbar-width: 5px;
+    --scrollbar-border-thickness: 0px;
+    --scrollbar-height: 5px;
+    --scrollbar-border-radius: 3px;
+    --show-double-buttons: none;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: var(--scrollbar-width, 20px);
+    height: var(--scrollbar-height, 20px);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #3B82F6);
+    border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255));
+    border-radius: var(--scrollbar-border-radius, 4px);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color, #A1A1AA);
+}
+
+body::-webkit-scrollbar-button {
+    background: var(--scrollbar-button-color, #3F3F46);
+    border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255));
+    border-radius: var(--scrollbar-border-radius, 4px);
+}
+
+body::-webkit-scrollbar-corner {
+    background: var(--scrollbar-corner-color, #FFFFFF);
+    border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255));
+    border-radius: var(--scrollbar-border-radius, 4px);
+}
+
+body::-webkit-scrollbar-button:vertical:start:increment,
+#preview::-webkit-scrollbar-button:vertical:end:decrement,
+#preview::-webkit-scrollbar-button:horizontal:start:increment,
+#preview::-webkit-scrollbar-button:horizontal:end:decrement {
+    display: var(--show-double-buttons, none);
+}
+
+/*----------------------- header pagina Inicio --------------------------*/
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(rgba(255, 127, 127, 0.574), rgba(255, 255, 255, 0.842)), url(../img/imagen_3.jpeg);
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 6em;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+}
+
+.text2Log{
+    font-size: 2.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgb(0, 101, 189);
+    text-shadow: 1px 1px 8px rgb(255, 255, 255);
+    margin: .4em 0;
+}
+
+/* ---------- Información del Credito para el fomento ---------- */
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 245, 155, 0.84));
+}
+
+.recuadroDesc1{
+    margin: 3em;
+    padding: 2.5em;
+    border-radius: 2em;
+    /* background-color: rgba(0, 0, 0, 0.137); */
+}
+
+.recuadroDesc1_1{
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    color: chocolate;
+}
+.subtitulo{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.subtitulo::after{
+    content: '';
+    display: block;
+    background-color: chocolate;
+    width: 150%;
+    height: 3px;
+}
+
+.recuadroDesc1_2{
+    font-size: 1.2em;
+}
+
+.boton1{
+text-align: center;
+}
+
+.masInfo{
+    margin-top: 2em;
+    padding: 1em 2em;
+    background-color: rgb(160, 207, 51);
+    border: none;
+    border-radius: .5em;
+}
+
+/* ---------- Imagen de ejecutivos ---------- */
+
+.imgPersona{
+    text-align: center;
+}
+
+.personasImg{
+    width: 50%;
+    margin-top: 2%;
+}
+
+/* --------------- Recuadro y encabezado de mis Productos --------------- */
+
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+    padding: 5em;
+}
+
+.recuadro2{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    max-height: 18em;
+    overflow: scroll;
+    border-radius: .5em;
+    box-shadow: 1px 1px 8px black;
+}
+
+.tituloProduct{
+    text-align: center;
+    font-size: 3em;
+    margin: .5em 0;
+}
+
+.productTit{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    color: chocolate;
+}
+
+.productTit::after{
+    content: '';
+    display: block;
+    background-color: chocolate;
+    width: 100%;
+    height: 3px;
+}
+
+/* ---------- Recuadro de las cuentas ---------- */
+.recuadro2_1, .recuadro2_2{
+    border: 1px solid black;
+    border-radius: 2em;
+    padding: 2em;
+    margin-bottom: 3em;
+    box-shadow: .5px .5px 10px black;
+}
+
+.cta_Ahorros, .cta_Corriente{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.nroCuenta{
+    margin-left: 1em;
+}
+
+.grid4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.textSaldo{
+    font-size: .8em;
+    margin: .3em 0;
+    text-align: left;
+}
+
+/* ---------- Boton de ver cuenta ---------- */
+
+
+button.verCuenta{
+    padding: 0.5em 0;
+    border-radius: 5px;
+    border: .3px solid black;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* ---------- Sección de Creditos para el cliente ---------- */
+
+div.textCreditos{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    color: chocolate;
+}
+
+div.textCreditos::after{
+    content: '';
+    background-color: chocolate;
+    display: block;
+    width: 100%;
+    height: 3px;
+}
+
+.grid5{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 6px;
+    margin-top: 5px;
+    height: 16em;
+    align-items: center;
+    overflow: hidden;
+    gap: 12px;
+}
+
+.cuadro_Credit{
+    text-align: center;
+    border: .3px solid black;
+    display: block;
+    padding: 11%;
+}
+
+.credito_1{
+    background: linear-gradient(rgba(59, 59, 59, 0.607), rgba(255, 255, 255, 0.551)) center, url(../img/Credito_Rural.jpeg);
+    background-size: cover;
+}
+.credito_2{
+    background: linear-gradient(rgba(59, 59, 59, 0.607), rgba(255, 255, 255, 0.551)) center, url(../img/emprendedor.jpeg);
+    background-size: cover;  
+}
+
+.credito_3{
+    background: linear-gradient(rgba(59, 59, 59, 0.607), rgba(255, 255, 255, 0.551)) center, url(../img/empresa.jpeg);
+    background-size: cover; 
+}
+
+.credito_4{
+    background: linear-gradient(rgba(59, 59, 59, 0.607), rgba(255, 255, 255, 0.551)) center, url(../img/estudiantil.jpeg);
+    background-size: cover; 
+}
+
+button.negacion{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.3em;
+    background: none;
+    border: none;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(100, 53, 128);
+    cursor: pointer;
+}
+
+/* ---------- Mis Servicios Bancarios ---------- */
+
+.grid6{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 7em;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 3em;
+}
+
+.ServiciosG{
+    display: block;
+    padding: 25% 11%;
+    background-color: white;
+    font-size: 1.1em;
+    box-shadow: 1px 1px 4px black;
+}
+
+.cambioBordes{
+    margin: 3em 0;
+}
+
+

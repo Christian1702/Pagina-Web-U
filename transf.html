@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/imagen_2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Estilos/transf.css">
+    <title>Transferencia | Banrisul</title>
+</head>
+
+<body>
+    <section class="header">
+        <div class="grid1">
+            <div class="textoLogo">
+                <h1>Banrisul</h1>
+                <p class="text2Log">El banco del barrio</p>
+            </div>
+            <div class="contImgLogo">
+                <img class="Imglogo" src="./img/imagen_2.png" alt="Logo Banrisul">
+            </div>
+        </div>
+    </section>
+
+    <div class="cuadro2">
+        <div class="cuadroNegro">
+            <div class="registro">
+                <h2>Transferencia</h2>
+            </div>
+            <form>
+                <input type="text" placeholder="Cuenta Origen"><br>
+                <input type="text" placeholder="Cuenta Destino"><br>
+                <input type="text" placeholder="Correo electrónico"><br>
+                <input type="password" placeholder="Monto"><br>
+            </form>
+        </div>
+        <button type="button" class="transferir" onclick="transConf()">Confirmar Transferencia</button>
+        <button type="button" class="Cancelar" onclick="transCancel()">Cancelar</button>
+    </div>
+    <script>
+        function transConf() {
+          alert("¡La Transferencia se a realizado con exito!");
+        }
+        function transCancel() {
+          alert("¡La Transferencia se a Cancelado!");
+          window.location.href = "pagInicio.html";
+        }
+    </script>       
+</body>
+
+</html>
